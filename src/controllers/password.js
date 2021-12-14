@@ -29,4 +29,7 @@ exports.forgotPassword = async function (req, res) {
     } catch (error) {
         return res.status(500).json({
             message: error.message,
-           
+            status: 500
+        });
+    }
+}
